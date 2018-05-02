@@ -11,6 +11,11 @@
  *    sumDigits(406) => 10
  **/
 
+
+var arrayofnumbers = [1,2,3,45,5]
+var eachDigitArray = arrayofnumbers.split()
+console.log(eachDigitArray)
+
 console.group('JS Iterations Week');
   console.log('%cFunction: sumDigits', 'background-color: green; color: white')
   console.groupCollapsed('Should return 6 from "123"');

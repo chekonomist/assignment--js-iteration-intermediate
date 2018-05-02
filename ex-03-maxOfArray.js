@@ -5,7 +5,11 @@
  * numbers as an argument and finds the highest number.
  *
 **/
-
+function maxOfArray(arrayOfNumbers){
+  var maxValueOnArray = Math.max(...arrayOfNumbers)
+  console.log(maxValueOnArray)
+  return maxValueOnArray
+}
 
 console.group('JS Iterations Week');
   console.log('%cFunction: maxOfArray', 'background-color: green; color: white')

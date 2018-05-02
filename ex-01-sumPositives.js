@@ -5,7 +5,17 @@
  *  only adds the positive numbers
  *
 */
-
+function sumPositives(arrayOfNumbers){
+  var sumOnlyPositives = 0
+  for (var i = 0; i < arrayOfNumbers.length; i++) {
+    if (arrayOfNumbers[i]>0) {
+      sumOnlyPositives = arrayOfNumbers[i] + sumOnlyPositives
+    }
+  }
+  console.log(sumOnlyPositives)
+  console.log("....")
+  return sumOnlyPositives
+}
 console.group('JS Iterations Week');
   console.log('%cFunction: sumPositives', 'background-color: green; color: white')
   console.groupCollapsed('Should return 12 in the next [3, -1, 4, 5, -3, -4] series');

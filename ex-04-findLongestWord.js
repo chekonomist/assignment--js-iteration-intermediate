@@ -6,6 +6,28 @@
  *
 **/
 
+function findLongestWord(stringOfWords){
+
+  var longestWordInString = ""
+  var separatedWords =  stringOfWords.split(" ")
+  var lenghtOfEachString = []
+
+  for (var i = 0; i < separatedWords.length; i++) {
+    lenghtOfEachString.push(separatedWords[i].length)
+    var lenghtOfLongestWordInEachArray = Math.max(...lenghtOfEachString)
+
+    if (separatedWords[i].length === lenghtOfLongestWordInEachArray) {
+      longestWordInString += separatedWords[i]
+    }
+  }
+
+  console.log(separatedWords)
+  console.log(lenghtOfEachString)
+  console.log(longestWordInString)
+  console.log("-----")
+  return longestWordInString
+}
+
 console.group('JS Iterations Week');
   console.log('%cFunction: findLongestWord', 'background-color: green; color: white')
   console.groupCollapsed('Should return "baskets" from "I have baskets full of lemons"');

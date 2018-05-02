@@ -2,7 +2,7 @@
 
 ## The Assignment
 
-The purpose of this assignment is to continue to improve your understanding and develop your skills with iteration.
+The purpose of this assignment is to continue to improve your understanding and develop your skills with iteration. You will need to iterate over strings and/or arrays to complete these exercises.
 
 
 ### Setup
