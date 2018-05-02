@@ -11,7 +11,27 @@
  * otherwise, the function should return `false`.
  *
 */
+function hasComplements(targetNum,arrayOfNumbers){
+  var isThereASum = false
+  var sumsWithinArray = []
 
+for (var i = 0; i < arrayOfNumbers.length; i++) {
+  if (arrayOfNumbers[0] !== arrayOfNumbers[i]) {
+    sumsWithinArray.push(arrayOfNumbers[0]+arrayOfNumbers[i])
+  }
+
+for (var i = 0; i < sumsWithinArray.length; i++) {
+  if(targetNum===sumsWithinArray[i]){
+    isThereASum=true
+    }
+  }
+}
+
+  console.log(targetNum)
+  console.log(sumsWithinArray)
+  console.log(isThereASum)
+  return isThereASum
+}
 var oddsArray = [1, 3, 5, 7, 9, 11, 13]
 var anotherArray = [2, 5, 6, 8, 12]
 

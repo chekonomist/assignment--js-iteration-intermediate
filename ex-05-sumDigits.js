@@ -12,9 +12,26 @@
  **/
 
 
-var arrayofnumbers = [1,2,3,45,5]
-var eachDigitArray = arrayofnumbers.split()
-console.log(eachDigitArray)
+function sumDigits(someNumber){
+var numberToString = ""
+numberToString += someNumber
+var arrOfNumbers = []
+var resultingSum = 0
+
+for (var i = 0; i < numberToString.length; i++) {
+  arrOfNumbers.push(numberToString[i])
+}
+
+console.log(arrOfNumbers)
+
+for (var i = 0; i < arrOfNumbers.length; i++) {
+  resultingSum = resultingSum + Number(arrOfNumbers[i])
+}
+
+console.log(resultingSum)
+console.log("-----")
+return resultingSum
+}
 
 console.group('JS Iterations Week');
   console.log('%cFunction: sumDigits', 'background-color: green; color: white')
